@@ -24,7 +24,6 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target.id)
         const id = entry.target.id
         menuItems.forEach((item) => {
           if (item.classList.contains(id)) {
@@ -38,7 +37,7 @@ const observer = new IntersectionObserver(
   },
   {
     rootMargin: '-80px 0px 0px 0px',
-    threshold: 0.5,
+    threshold: 0.2,
   },
 )
 

@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Ming Design</title>
-  </head>
 
-  <body>
-    <header id="header">
-      <div class="container__menu">
-        <div class="logo">
-          <!-- <a href="#inicio">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Ming Design</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container__menu">
+      <div class="logo">
+        <!-- <a href="#inicio">
             <img src="images/Icon-white.svg" alt="logo" />
           </a> -->
+      </div>
+      <div class="menu">
+        <i id="menu__bars" class="fas fa-bars menu__bars"></i>
+        <div id="menu__back" class="menu__back"></div>
+        <nav id="menu__nav">
+          <div class="logo logo--menu"></div>
+          <ul class="menu__items__container">
+            <li><a class="inicio selected menu__item" href="#inicio">inicio</a></li>
+            <li><a class="sobre__nosotros menu__item" href="#sobre__nosotros">sobre nosotros</a></li>
+            <li><a class="servicios menu__item" href="#servicios">servicios</a></li>
+            <li><a class="planes menu__item" href="#planes">planes</a></li>
+            <li><a class="contacto menu__item" href="#contacto">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion container__cover">
+      <div class="cover">
+        <div class="text">
+          <h1>
+            Diseños radiantes que llevarán tu imaginación a otra galaxia
+          </h1>
+          <p>
+            Damos lo mejor de nosotros para sacar a relucir lo mejor
+            de tu pequeña o gran empresa. <br> ¿Quieres saber cómo? Da click al botón
+          </p>
+          <div class="container-boton">
+            <input class="boton" type="button" value="Saber Más" />
+          </div>
         </div>
-        <div class="menu">
-          <i id="menu__bars" class="fas fa-bars menu__bars"></i>
-          <div id="menu__back" class="menu__back"></div>
-          <nav id="menu__nav">
-            <div class="logo logo--menu"></div>
-            <ul class="menu__items__container">
-              <li ><a class="inicio selected menu__item" href="#inicio">inicio</a></li>
-              <li ><a class="sobre__nosotros menu__item" href="#sobre__nosotros">sobre nosotros</a></li>
-              <li ><a class="servicios menu__item" href="#servicios">servicios</a></li>
-              <li ><a class="planes menu__item" href="#planes">planes</a></li>
-              <li ><a class="contacto menu__item" href="#contacto">contacto</a></li>
-            </ul>
-          </nav>
+        <div class="svg">
+          <img src="images/image__cover.svg" alt="rocket - cohete" />
         </div>
       </div>
-    </header>
-
-    <main>
-      <section id="inicio" class="seccion container__cover">
-        <div class="cover">
-          <div class="text">
-            <h1>
-              Diseños radiantes que llevarán tu imaginación a otra galaxia
-            </h1>
-            <p>
-              Damos lo mejor de nosotros para sacar a relucir lo mejor
-              de tu pequeña o gran empresa. <br> ¿Quieres saber cómo? Da click al botón
-            </p>
-            <div class="container-boton">
-              <input class="boton" type="button" value="Saber Más" />
+    </section>
+    <section id="sobre__nosotros" class="seccion sn">
+      <div class="sn__imagenes">
+        <div class="imagen__left">
+          <img src="./images/sobre-nosotros1.svg" alt="sobre nosotros">
+        </div>
+        <div class="imagen__right">
+          <img src="./images/sobre-nosotros2.svg" alt="sobre nosotros">
+        </div>
+      </div>
+      <div class="sn__contenido">
+        <div class="sn__contenido__text">
+          <h2 class="sn__contenido__titulo">sobre nosotros</h2>
+          <p class="sn__contenido__subtitulo">Generamos soluciones innovadoras a tu problema con las mejores
+            tecnologías. Trabajar con nosotros...</p>
+        </div>
+        <div class="sn__contenido__cards">
+          <div class="sn__card">
+            <i class="sn__icon fa-solid fa-plane-departure"></i>
+            <div class="sn__card__info">
+              <p><span>lleva</span>tu negocio al siguiente nivel de una forma rapida
+                y con la que quedas agusto</p>
             </div>
           </div>
-          <div class="svg">
-            <img src="images/image__cover.svg" alt="rocket - cohete" />
+          <div class="sn__card">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <div class="sn__card__info">
+              <p><span>aumenta</span>el numero de clientes y por lo tanto las ventas.
+                ¡Gran Ganacia!</p>
+            </div>
           </div>
         </div>
-      </section>
-      <br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br>
-      <section id="sobre__nosotros" class="seccion">
-        
-      </section>
-    </main>
+      </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </main>
 
-    <script src="./js/index.js"></script>
-  </body>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
